@@ -12,6 +12,9 @@
     })(jQuery);
 
 
+    $(document).ready(function () {
+        $('#fullpage').fullpage();
+    });
 
 
 
@@ -19,11 +22,12 @@
 
 
 
-    $(".content_index").hide(0);
+
+  //  $(".content_index").hide(0);
     $(".content_aboutme").hide(0);
     $(".content_social").hide(0);
-    //$(".reveal").animate({ width: '0%' }, 3000);
-    show_social();
+    $(".reveal").animate({ width: '0%' }, 3000);
+  //  show_social();
 
 
     var count=0;
@@ -108,6 +112,26 @@
         $("#right").css({ "background-color": "blue" });
        
     };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
 
 /*
