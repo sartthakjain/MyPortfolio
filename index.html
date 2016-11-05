@@ -9,20 +9,19 @@
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
-    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
 
    
 </head>
 <body>  
     <div class="main">
-        <div class="left" id="left" style="height: 400%;"
-           ></div>  
-        <div class="right" id="right" style="height:400%;background-color:black;"></div>
-        <div class="nav">
+        
+       
+        <nav class="nav navbar-fixed-top">
             <ul>
-                <li class="nav_prev" style="left:3%;">
+                <li class="nav_prev">
                     <span class="line_link_a"></span>
                     <span class="line_link_b"></span>
                     <span class="line_link_c"></span>
@@ -35,7 +34,7 @@
                     <a class="link_text" id="next">Next</a>
                 </li>
             </ul>
-        </div>  
+        </nav>  
 
         <div id="helper">
             <div class="marker red"></div>
@@ -43,20 +42,25 @@
             <div class="marker blue"></div>
             <div class="marker yellow"></div>
         </div>
-    
+    <!------------PRELOADER----------------------------------------->
+        <div class="preloader"></div>
 
-            <!---------------------index page-------------------------------------------->!>
+            <!---------------------index page-------------------------------------------->
         
         <div class="content_index" >
-            <div class="content_index" style="opacity: 0.3; background-image: url(pp1.jpeg);z-index:9;"></div>
-            <div class="content_index">
-                <a class="onblack">Sarthak</a><a class="onwhite">Jain</a>
-                <a id="one" class="onblack catchy_desc">"He is a creative web designer and</a>
-                <a id="two" class="onwhite catchy_desc">an innovative software engineer."</a>
-                <div class="reveal"></div>
+            <div class="content_index indexbg"></div>
+      
+            <div class="content_index" style="text-align:center;">
+                <div class="empty_space container" style="height:40%;"></div> 
+                <a class="onblack"><h1 style=" font-size: 6vw; font-weight: 100;">Sarthak</h1></a>
+                <a id="one" class="catchy_desc" style="letter-spacing:0.5vw">
+                    "He is a creative web designer and an innovative software engineer."
+                </a>
+       
+               
 
-                <div class="reveal" style="background-color: #f2efe8; left: 50%;"></div>
-                <div style="position:fixed;top:80%;left:30%;">
+               
+                <div style="position:fixed;bottom:0%;text-align:center;min-width:300px;width:100%;" class="container" >
                 
                     <ul class="soc">
                         <li><a class="soc-twitter" href="https://twitter.com/sartthak" target="_blank"></a></li>
@@ -74,7 +78,7 @@
                   </div>
    
     
-    <!--------------------------------About Me--------------------->!>
+    <!--------------------------------About Me--------------------->
         <div class="content_aboutme" >
           
             <div class="block_one">
@@ -101,7 +105,7 @@
                      data-100p="opacity:0.1;left:-10%;"
                      data-200p="opacity:0;left:-10%;"
                      data-anchor-target=".red"
-                     style="background: url(pp.jpeg); left: 0%; position: fixed;
+                     style="background: url(images/pp.jpeg); left: 0%; position: fixed;
                     background-size:105%;opacity:0.6;top:0%;background-repeat:no-repeat;"></div>
         
             </div>
@@ -131,7 +135,7 @@
                      data-100p="opacity:0.4;top:200px;"
                      data-200p="opacity:0;top:0px;"
                      data-anchor-target=".red" 
-                     style="background: url(p22.jpg); left: 50%; position: absolute;"></div>
+                     style="background: url(images/p22.jpg); left: 50%; position: absolute;"></div>
                 </div>
         </div>
     
@@ -157,7 +161,7 @@
                  data-0p="top:200px;opacity:0;"
                  data-65p="top:400px;opacity:1;"
                  data-85p="top:700px;opacity:0;"
-                 data-anchor-target=".red"><img src="insta_image.svg" height="70" width="70" /><a style="top:0%;color:black;"> Instagram</a></div>
+                 data-anchor-target=".red"><img src="images/insta_image.svg" height="70" width="70" /><a style="top:0%;color:black;"> Instagram</a></div>
 
             <div class="block_one">
               
@@ -177,7 +181,7 @@
                  data-100p="top:200px;opacity:0;"
                  data-165p="top:400px;opacity:1;"
                  data-185p="top:700px;opacity:0;"
-                 data-anchor-target=".red"><img src="twitter.png" height="70" width="70" /><a style="top: 0%; color: black;">Twitter</a></div>
+                 data-anchor-target=".red"><img src="images/twitter.png" height="70" width="70" /><a style="top: 0%; color: black;">Twitter</a></div>
 
             <div class="block_two">
                 <div style="left:10%;position:relative;"
@@ -216,10 +220,10 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
     </script>
-    <script src="skrollr.js"></script>
-    <script src="jquery.easing.min.js"></script>
-    <script src="index.js"></script>
-    <script type="text/javascript" src="jquery.fullPage.js"></script>
+    <script src="js/skrollr.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/index.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 </body>
 
     
