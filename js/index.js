@@ -17,20 +17,21 @@
     });
 
 
-    $(".preloader").hide(0);
-  // $(".content_index").hide(0);
-    $(".content_aboutme").hide(0);
-    $(".content_social").hide(0);
+     $(".preloader").hide(0);
+     $(".content_index").show(0);
+     $(".content_aboutme").hide(0);
+     $(".content_social").hide(0);
+    
 
 
+    // show_aboutme();
 
     setTimeout(function(){
-  //    $(".preloader").hide(1000);      
+      $(".preloader").hide(1000);      
 
     }, 8000);
 
    
-  //  show_social();
 
 
     var count=0;
@@ -97,6 +98,7 @@
             $("#left").css({ "background-color": "#fff" });
             setTimeout(function () { $(".general_text").addClass("show"); }, 2000);
             $(".photos").delay(1000).animate({ opacity: '1' }, 500, "easeInOutCirc");
+            $(".main").css({ "background-color": "white" });
 
         }, 2000);
 
