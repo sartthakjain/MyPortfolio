@@ -1,45 +1,55 @@
-﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<html  ng-app="portfolio">
 <head>
+  <title>Sarthak Jain</title>
 
-    <title>Sarthak Jain</title>
 
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,400,900i" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Cinzel:400,900' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cherry+Swash:700' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,300i,400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin+Slab">
     <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="node_modules/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">  </script>
 
-   
+
+
 </head>
-<body>  
-    <div class="main">
-        
-       
-        <nav class="nav navbar-fixed-top">
-            <ul>
-                <li class="nav_prev container-fluid" >
-                    <span class="line_link_a"></span>
-                    <span class="line_link_b"></span>
-                    <span class="line_link_c"></span>
 
-                    <a class="link_text" id="home">Home</a>
-                </li>
-                <li class="nav_next container-fluid" style="padding-right:20px;">
-                    <span class="line_link_c"></span>
-                    <span class="line_link_a"></span>
-                    <a class="link_text" id="next">Next</a>
-                    <span class="line_link_b"></span>
 
-                </li>
-            </ul>
-        </nav>  
+
+    <nav class="navbar  nav navbar-fixed-top" ng-controller="homeController">
+        <ul>
+            <li class="nav_prev container-fluid">
+                <span class="line_link_a"></span>
+                <span class="line_link_b"></span>
+                <span class="line_link_c"></span>
+
+                <a class="link_text" id="home"  ui-sref="socialState">Me</a>
+            </li>
+
+
+
+            <li class="nav_next container-fluid" style="padding-right:20px;">
+                <span class="line_link_c"></span>
+                <span class="line_link_a"></span>
+                <a class="link_text" id="next" ui-sref="aboutState">Next</a>
+                <span class="line_link_b"></span>
+
+            </li>
+        </ul>
+    </nav>
+<body style="background-color:blue;">
+
+
+
+
+
+
 
         <div id="helper">
             <div class="marker red"></div>
@@ -48,188 +58,60 @@
             <div class="marker yellow"></div>
         </div>
 
-       
-    <!------------PRELOADER----------------------------------------->
-        <div class="preloader"></div>
 
-            <!---------------------index page-------------------------------------------->
-        
-        <div class="content_index" >
-            <div class="content_index indexbg">
-                
-            </div>
-            
-            <div class="content_index" style="text-align:center;">
-                <div class="empty_space container" style="height:40%;"></div> 
-                <p class="onblack">SARTHAK</p>
-                <p id="one" class="catchy_desc" >
-                    "He is a creative web designer and an innovative software engineer."
-                </p>
-       
-               
+        <!------------PRELOADER----------------------------------------->
+        <div class="preloasder"></div>
 
-               
-                <div style="position:fixed;bottom:0%;text-align:center;min-width:300px;
-                width:100%;line-height:5px;letter-spacing:10px;padding-bottom:20px;" class="container" >
-                
-                    <ul class="soc">
-                        <li><a class="soc-twitter" href="https://twitter.com/sartthak" target="_blank"></a></li>
-                        <li><a class="soc-facebook" href="https://www.facebook.com/sartthak.jain" target="_blank"></a></li>
-                        <li><a class="soc-linkedin" href="https://in.linkedin.com/in/sarthak-jain-14356795" target="_blank"></a></li>
-                        <li><a class="soc-instagram" href="https://www.instagram.com/sartthak.jain" target="_blank"></a></li>
-                        <li><a class="soc-skype soc-icon-last" href="#" target="_blank"></a></li>
-                    </ul>
-                    <!---social media buttons-->
-                  
-                    </div>
-            </div>
-                  </div>
-   
-    
-    <!--------------------------------About Me--------------------->
-        <div class="content_aboutme"style="position:fixed;">
-            <div class="photos  container-fluid"
-                 data-0p="top:0%;background-position-y:0px;"
-                 data-95p="top:0%;background-position-y:-150px;"
-                 data-100p="top:-100%;"
-                 data-anchor-target=".red">
-
-                <div class="name_short container-fluid"
-                     data-0p="top:100px;left:50%;font-size:150px;color:#FFFF33;"
-                     data-25p="top:-5px;left:0%;font-size:50px;color:#FFFF33;"
-                     data-anchor-target=".green">
-                    SJ
-                </div>
-
-                <p class="general_text container"
-                   data-0p="top:500px;opacity:1;"
-                   data-35p="top:50px;opacity:1;"
-                   data-70p="top:40px;opacity:0;"
-                   data-anchor-target=".red">
-                    <span class="general_line"></span>
-                    <span>
-                        "Was born in Rajasthan.Studied web designing and programming.
-                        he is a compulsive self-learner which is why most of his knowledge and experience are the result of
-                        the constant need to learn and experiment with designs and new trends."
-                    </span>
-                </p>
-            </div>
-
-            <div class="photos  container-fluid" id="photoblock2"
-                 data-0p="top:0%;background-position-y:-100px;"
-                 data-97p="top:0%;background-position-y:-100px;"
-                 data-98p="top:-100%;background-position-y:-100px;"
-                 data-195p="top:-100%;background-position-y:-500px"
-                 data-200p="top:-200%;"
-                 data-anchor-target=".red">
+        <!---------------------index page-------------------------------------------->
 
 
-                <p class="general_text container"
-                   data-0p="top:700px;opacity:1;"
-                   data-100p="top:700px;opacity:1;"
-                   data-155p="top:50px;opacity:1;"
-                   data-170p="top:40px;opacity:0;"
-                   data-anchor-target=".red" style="float:right;">
-                    <span>
-                        "Design is <br /><strike>how it looks like or feels like.</strike><br /><strong>how it works like.</strong>"
-                    <br /><br />
-                        Design inspirations from <strong>REAL WORLD</strong>.    
-                                        </span>
-                    <span class="general_line"></span>
-                </p>
-
-            </div>
-
-              </div>
-      
-    
-    <!--------------------------SOCIAL------------------------------------>
-        <div class="content_social" >
-
-            <div style="position:fixed;top:10%;left:30%;">
-                <ul class="soc">
-                    <li><a class="soc-twitter" href="https://twitter.com/sartthak" target="_blank"></a></li>
-                    <li><a class="soc-facebook" href="https://www.facebook.com/sartthak.jain" target="_blank"></a></li>
-                    <li><a class="soc-google" href="#" target="_blank"></a></li>
-                    <li><a class="soc-linkedin" href="https://in.linkedin.com/in/sarthak-jain-14356795" target="_blank"></a></li>
-                    <li><a class="soc-instagram" href="https://www.instagram.com/sartthak.jain" target="_blank"></a></li>
-                    <li><a class="soc-youtube" href="#" target="_blank"></a></li>
-                    <li><a class="soc-skype soc-icon-last" href="#" target="_blank"></a></li>
-                </ul>
-            </div>
+        <div ui-view="content" ></div>
 
 
 
 
-            <div style="transform:rotate(-90deg);left:0%;top:50%;position:fixed;font-size:40px;letter-spacing:2px;"
-                 data-0p="top:200px;opacity:0;"
-                 data-65p="top:400px;opacity:1;"
-                 data-85p="top:700px;opacity:0;"
-                 data-anchor-target=".red"><img src="images/insta_image.svg" height="70" width="70" /><a style="top:0%;color:black;"> Instagram</a></div>
+        <!--------------------------------About Me--------------------->
 
-            <div class="block_one">
-              
 
-                <div style="left:10%;position:relative;"
-                     data-0p="top:0px;"
-                     data-95p="top:-400px;"
-                     data-anchor-target=".red">
-                    <iframe src="//lightwidget.com/widgets/513f865e0d6e534880e310c0bc408847.html"
-                            id="lightwidget_513f865e0d" name="lightwidget_513f865e0d" scrolling="no" allowtransparency="true"
-                            class="lightwidget-widget" style="width: 70%;height:100%; border: 0; overflow: hidden;"></iframe>
-                </div>
+        <!--------------------------SOCIAL------------------------------------>
 
-             </div>
 
-            <div style="transform:rotate(-90deg);left:0%;top:50%;position:fixed;font-size:40px;letter-spacing:2px;"
-                 data-100p="top:200px;opacity:0;"
-                 data-165p="top:400px;opacity:1;"
-                 data-185p="top:700px;opacity:0;"
-                 data-anchor-target=".red"><img src="images/twitter.png" height="70" width="70" /><a style="top: 0%; color: black;">Twitter</a></div>
 
-            <div class="block_two">
-                <div style="left:10%;position:relative;"
-                     data-100p="top:0px;"
-                     data-195p="top:-400px;"
-                     data-anchor-target=".red">
-                    <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/sartthak">Tweets by sartthak</a>
-                     </div>
 
-            </div>
-            <div class="block_three">
-                <div style="left:10%;position:relative;"
-                     data-100p="top:0px;"
-                     data-195p="top:-400px;"
-                     data-anchor-target=".red">
-                    <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=Estrique"
-                             width="480" height="400"></iframe>              
-                </div>
-            </div>
 
-         
-        </div>
-       
+
+          <script src="/js/index.js"></script>
+            <script src="/js/skrollr.js"></script>
+        <script src="/js/jquery.easing.min.js"></script>
+        <script src="/js/jquery.fullPage.js"></script>
+
+
+        <script src="/node_modules/angular/angular.js"></script>
+        <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="js/directives/skrollr.dir.js"></script>
+        <script src="/node_modules/angular-skrollr/app/js/skrollr.js"></script>
+
+
+        <script src="app/app.js"></script>
+        <script src="app/home/home.module.js"></script>
+        <script src="app/home/home.controller.js"></script>
+        <script src="app/about/about.module.js"></script>
+        <script src="app/about/about.controller.js"></script>
+        <script src="app/social/social.module.js"></script>
+        <script src="app/social/social.controller.js"></script>
+
+
+
+
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         <script src="//lightwidget.com/widgets/lightwidget.js"></script>
-    
-    
-    
-    
-    
-    
-    
-    
-     </div>
+
+        <script async src="//static.getspotlyte.com/spotsbusiness/js/stream-widget-load.js"></script>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
-    </script>
-    <script src="js/skrollr.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/index.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
 </body>
 
-    
+
 </html>
-    

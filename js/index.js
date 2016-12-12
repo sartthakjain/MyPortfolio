@@ -1,54 +1,54 @@
 ﻿$(document).ready(function () {
     $page_value = 0;
 
-    (function ($) {
+   (function ($) {
         // Init Skrollr
         var s = skrollr.init({
             render: function (data) {
-                //Debugging - Log the current scroll position.
-                //console.log(data.curTop);
-            }
+                      }
         });
     })(jQuery);
 
 
     $(document).ready(function () {
-        $('#fullpage').fullpage();
+        $('#fullpage').fullpage({
+            anchors: ['firstPage', 'secondPage', 'thirdPage']
+        });
     });
 
 
-   //  $(".preloader").hide(0);
-    // $(".content_index").hide(0);
-     $(".content_aboutme").hide(0);
-     $(".content_social").hide(0);
-    
+     $(".preloader").hide(0);
+    $(".content_index").show(0);
+     $(".content_aboutme").show(0);
+     $(".content_social").show(0);
 
 
-     //show_aboutme();
+
+     show_social();
 
     setTimeout(function(){
-      $(".preloader").hide(1000);      
+      $(".preloader").hide(1000);
 
     }, 8000);
 
-   
 
-
-    var count=0;
-    setInterval(function () {
-
-        document.getElementById('one').classList.toggle("active");
-        switch (count%6) {
-            case 0: $("#one").text("He is a creative web designer and an innovative software engineer.");
-                break;
-            case 2: $("#one").text("also a crazy youtuber and an adventurer gypsy."); 
-                break;
-            case 4: $("#one").text("The fitness freak guy and extream coffee lover."); 
-      
-        }
-
-        count++;
-    }, 2200);
+    //
+    //
+    // var count=0;
+    // setInterval(function () {
+    //
+    //     document.getElementById('one').classList.toggle("active");
+    //     switch (count%6) {
+    //         case 0: $("#one").text("He is a creative web designer and an innovative software engineer.");
+    //             break;
+    //         case 2: $("#one").text("also a crazy youtuber and an adventurer gypsy.");
+    //             break;
+    //         case 4: $("#one").text("The fitness freak guy and extreme coffee lover.");
+    //
+    //     }
+    //
+    //     count++;
+    // }, 2200);
 
 
     $(".nav_next").click(function () {
@@ -62,7 +62,7 @@
                      show_social();
                      break;
         };
-        
+
 
     });
 
@@ -77,16 +77,16 @@
             case 2: $(".content_social").hide(1000);
                      show_aboutme();
                       break;
-                    
+
         };
 
 
     });
-    
 
 
 
-    function show_aboutme() { 
+
+    function show_aboutme() {
         $page_value = 1;
         $(".content_aboutme").delay(3000).show(1000);
         setTimeout(function () {
@@ -107,9 +107,10 @@
     function show_social() {
         $page_value = 2;
         $(".content_social").delay(3000).show(1000);
-        $("#left").css({ "background-color": "blue" });
-        $("#right").css({ "background-color": "blue" });
-       
+        $(".main").css({ "background-color": "white" });
+    //    $("#left").css({ "background-color": "blue" });
+      //  $("#right").css({ "background-color": "blue" });
+
     };
 
 
@@ -134,7 +135,7 @@
 });
 
 /*
- <p class="onblack general_text" data-center-top="opacity:0;" data-top-bottom="opacity:1;" 
+ <p class="onblack general_text" data-center-top="opacity:0;" data-top-bottom="opacity:1;"
                    data-anchor-target=".block_one"
                    style="top: 500px; left: 10%; font-size: 30px; width: 50%; position: fixed;">
                     "Design is not just what it looks like an
@@ -149,7 +150,7 @@
 
 
 
-                
+
         <div id="helper">
             <div class="marker red"></div>
             <div class="marker green"></div>
@@ -167,12 +168,12 @@
 
                  <!-- LightWidget WIDGET -->
                <iframe src="//lightwidget.com/widgets/19b60c7acf1357f99603c2a61bbb9545.html"
-             id="lightwidget_19b60c7acf" name="lightwidget_19b60c7acf" scrolling="no" 
-            allowtransparency="true" class="lightwidget-widget" 
+             id="lightwidget_19b60c7acf" name="lightwidget_19b60c7acf" scrolling="no"
+            allowtransparency="true" class="lightwidget-widget"
             style="width: 20%;height:20%; border: 0; overflow: hidden;"></iframe>
 
 
-             
+
                 <h1 class="name_short" style="position:fixed;font-size:10px;"
                     data-bottom-bottom="top:100px;left:75%;"
                     data-top-center="top:-20px;left:35%;"
@@ -186,7 +187,27 @@
 
                 //helper
 
-              
+
+
+
+
+                //tint
+
+                   <div class="tintup" data-id="sartthakjain"
+                  data-columns="" data-expand="true"
+                 data-infinitescroll="true"
+                 data-personalization-id="842707"
+                style="height:500px;width:100%;">
+                <a href="http://www.tintup.com/blog/the-best-twitter-wall-display"
+                   style="width:118px;height:31px;
+                background-image:url(//d33w9bm0n1egwm.cloudfront.net/assets/logos/poweredbytintsmall.png);
+                position:absolute;bottom:10px;right: 20px;text-indent: -9999px;z-index:9;">tweet wall for events</a></div>
+
+            </div>
+
+              <script async src="https://d36hc0p18k1aoc.cloudfront.net/pages/a5b5e5.js"></script>
+
+
 
 
 */

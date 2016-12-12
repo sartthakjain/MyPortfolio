@@ -1,0 +1,54 @@
+ <div class="content_social" style="position:fixed;  " >
+
+          
+
+
+
+
+            <div style="transform:rotate(-90deg);left:0%;top:50%;position:fixed;font-size:40px;letter-spacing:2px;"
+                 data-0p="top:200px;opacity:0;"
+                 data-65p="top:400px;opacity:1;"
+                 data-85p="top:700px;opacity:0;"
+                 data-anchor-target=".red"><img src="images/insta_image.svg" height="70" width="70" /><a style="top:0%;color:black;"> Instagram</a></div>
+
+            <div class="block_one">
+              
+
+                <div style="left:10%;position:relative;"
+                     data-0p="top:0px;"
+                     data-95p="top:-400px;"
+                     data-anchor-target=".red">
+                    <iframe src="//lightwidget.com/widgets/513f865e0d6e534880e310c0bc408847.html"
+                            id="lightwidget_513f865e0d" name="lightwidget_513f865e0d" scrolling="no" allowtransparency="true"
+                            class="lightwidget-widget" style="width: 70%;height:100%; border: 0; overflow: hidden;"></iframe>
+                </div>
+
+             </div>
+
+            <div style="transform:rotate(-90deg);left:0%;top:50%;position:fixed;font-size:40px;letter-spacing:2px;"
+                 data-100p="top:200px;opacity:0;"
+                 data-165p="top:400px;opacity:1;"
+                 data-185p="top:700px;opacity:0;"
+                 data-anchor-target=".red"><img src="images/twitter.png" height="70" width="70" /><a style="top: 0%; color: black;">Twitter</a></div>
+
+            <div class="block_two">
+                <div style="left:10%;position:relative;"
+                     data-100p="top:0px;"
+                     data-195p="top:-400px;"
+                     data-anchor-target=".red">
+                    <a class="twitter-timeline" data-width="500" data-height="500" href="https://twitter.com/sartthak">Tweets by sartthak</a>
+                     </div>
+
+            </div>
+            <div class="block_three">
+                <div style="left:10%;position:relative;"
+                     data-100p="top:0px;"
+                     data-195p="top:-400px;"
+                     data-anchor-target=".red">
+                    <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=Estrique"
+                             width="480" height="400"></iframe>              
+                </div>
+            </div>
+
+         
+        </div>
