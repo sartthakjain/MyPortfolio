@@ -14,6 +14,9 @@ app.get('/',function(req,resp){
   resp.sendFile('index.html',{root:path.join(__dirname,'/')});
 });
 
-app.listen('3000',function engine(request,response){
-  console.log("listening to port 3000");
+var server_port = process.env.OPENSHIFT_NODEJS_PORT || 8080
+var server_ip_address = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+
+app.listen(server_port, server_ip_address, function () {
+  console.log( "Listening on " + server_ip_address + ", port " + server_port )
 });
