@@ -1,5 +1,5 @@
 ﻿angular.module('home')
-    .controller('homeController', ['$state', '$scope', function ($state, $scope) {
+    .controller('homeController', ['$state', '$scope','$http' ,function ($state, $scope, $http) {
 
 
 
@@ -14,7 +14,7 @@
             var count = 0;
             setInterval(function () {
 
-              //  document.getElementById('one').classList.toggle("active");
+        //       document.getElementById('one').classList.toggle("active");
                 switch (count % 6) {
                     case 0: $("#one").text("He is a creative web designer and an innovative software engineer.");
                         break;
@@ -28,10 +28,21 @@
             }, 2200);
 
 
+            $scope.emailSubmit=function(event){
+              if(event.which===13){
+                $http.post('api/user/email',$scope.user).success(function(response){
+                  console.log(response);
+                  console.log($scope.user.email+" working");
+                }).error(function(err){
+                  console.log(err);
+                  console.log($scope.user.email+" not working");
+                })
+
+              }
+            }
 
 
 
 
 
-
-    }])
+    }]);

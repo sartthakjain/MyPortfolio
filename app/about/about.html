@@ -1,37 +1,69 @@
 
 
-<div class="content_aboutme" style="position:fixed; " ng-controller="aboutController">
+<div class="content_aboutme"  ng-controller="aboutController">
+
+
+  <div class="name_short container-fluid"
+      skrollr
+       data-0p="top:100px;left:50%;font-size:150px;color:#FFFF33;"
+       data-50p="top:-5px;left:0%;font-size:50px;color:#FFFF33;"
+       data-anchor-target=".green">
+      SJ
+  </div>
     <div class="photos  container-fluid"
     skrollr
          data-0p="top:0%;background-position-y:0px;"
-         data-99p="top:0%;background-position-y:-150px;"
-         data-100p="top:-100%;"
+         data-199p="top:0%;background-position-y:-150px;"
+
          data-anchor-target=".red">
 
-        <div class="name_short container-fluid"
-            skrollr
-             data-0p="top:100px;left:50%;font-size:150px;color:#FFFF33;"
-             data-25p="top:-5px;left:0%;font-size:50px;color:#FFFF33;"
-             data-anchor-target=".green">
-            SJ
-        </div>
+ <div class="empty_space row"> </div>
+  <div class="empty_space row"> </div>
 
-        <p class="general_text container"
+        <p class="general_text container animation_element row"
           skrollr
-           data-0p="top:500px;opacity:1;"
-           data-35p="top:50px;opacity:1;"
-           data-65p="top:50px;opacity:1;"
-           data-70p="top:40px;opacity:0;"
-           data-anchor-target=".red">
-            <span class="general_line"></span>
+          data-animation="show_from_left"
+          >
+            <span class="general_line animation_element" ></span>
             <span>
                 "Was born in Rajasthan.Studied web designing and programming.
                 he is a compulsive self-learner which is why most of his knowledge and experience are the result of
                 the constant need to learn and experiment with designs and new trends."
             </span>
         </p>
+
+        <div class="row timeline">
+          <div class="empty_space row"> </div>
+          <p class="row">
+              <br />
+           I am always curious about latest technologies that
+            are dominating the market and I build up projects
+            on them simultaneously learning them.
+         </p>
+         <div class="empty_space row"> </div>
+
+         <div class="row">
+           <img
+            src="/images/circle_profile.png" />
+         </div>
+         <div class="empty_space row"> </div>
+
+           <div class="row"> 2014</div>
+           <div class="empty_space row"> </div>
+           <div class="row">
+             2015
+           </div>
+           <div class="empty_space row"> </div>
+           <div class="row">
+             2016
+           </div>
+
+        </div>
+
+
     </div>
 
+<!--------
     <div class="photos  container-fluid" id="photoblock2"
       skrollr
          data-0p="top:0%;background-position-y:-100px;"
@@ -42,8 +74,9 @@
          data-anchor-target=".red">
 
 
-        <p class="general_text container"
+        <p class="general_text container animation_element"
           skrollr
+          data-animation="show_from_left"
            data-0p="top:500px;opacity:1;"
            data-100p="top:500px;opacity:1;"
            data-185p="top:50px;opacity:1;"
@@ -58,5 +91,6 @@
         </p>
 
     </div>
+    ---->
 
 </div>

@@ -3,7 +3,7 @@
 
 
 
-              var $animation_elements = $('.general_text');
+              var $animation_elements = $('.animation_element');
               var $window = $(window);
 
 
@@ -44,14 +44,15 @@
             var element_height = $element.outerHeight();
             var element_top_position = $element.offset().top;
             var element_bottom_position = (element_top_position + element_height);
-
+            var animation_type=($element).data('animation');
             //check to see if this current container is within viewport
             if ((element_bottom_position >= window_top_position) &&
                 (element_top_position <= window_bottom_position)) {
-              $element.addClass('show');
-              console.log(element_top_position);
+              $element.addClass(animation_type);
+              console.log(animation_type);
             } else {
-              $element.removeClass('show');
+          
+              console.log(animation_type);
             }
           });
         }

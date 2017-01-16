@@ -1,0 +1,143 @@
+.content_aboutme{
+  color: black;
+
+}
+
+
+
+.block_one,.block_two,.block_three
+{
+    font-family: 'Lato', sans-serif;
+    position:relative;
+    display:block;
+    left:0px;
+    top:20%;
+    height:65%;
+    width:100%;
+    background-color:transparent;
+
+
+
+}
+
+.block_two
+{
+    top:100%;
+}
+.block_three
+{
+    top:300%;
+}
+.photos
+{
+
+     position:relative;
+      background-image: url("/images/pp.jpeg");
+    transition:all cubic-bezier(.165,.84,.44,1) 1s;
+      z-index:10;
+
+      width:100%;
+        opacity:1;
+      background-repeat:no-repeat;
+     background-color:white;
+      background-position-x:-120px;
+           background-position-y:0px;
+           background-attachment: fixed;
+
+}
+
+#photoblock2
+{   top:0%;
+    background-image:url("/images/test.jpg");
+
+    background-size:300vh;
+   background-position-y:-100px;
+    background-color:black;
+    background-repeat:no-repeat;
+
+   background-position-x:40%;
+
+}
+.general_text,.name_short
+{
+    position:relative;
+
+    font-size:15px;
+    letter-spacing:1px;
+      font-weight:400;
+    opacity:1;
+   max-width:400px;
+     color:black;
+     transition:all cubic-bezier(.165,.84,.44,1) 1s;
+     z-index:11;
+     right:0px;
+  transition-delay: 2s;
+}
+
+.general_text{
+  
+    right:400px;
+     font-family: 'Muli', sans-serif;
+}
+
+.show_from_left
+   {    float:right;
+        text-align:center;
+        right:10px;
+        opacity:1;
+
+
+
+   }
+.name_short{
+    font-family: 'Cinzel', serif;
+    position:fixed;
+    top:100px;
+    left:50%;
+    font-size:150px;
+    color:#FFFF33;
+    opacity:1;
+    transition:all cubic-bezier(.165,.84,.44,1) 1s;
+    display:inline;
+}
+
+.general_line{
+    background-color:black;//#feffff;
+    left:-50%;
+    top:13%;
+    width:45%;
+    height:1px;
+    position:absolute;
+    transition:all cubic-bezier(.165,.84,.44,1) 1s;
+}
+
+.block_two h1{
+    position:absolute;
+    top:0%;
+    left:10%;
+    font-size:20px;
+   font-family: 'Cinzel', serif;
+   font-weight:400;
+   z-index:11;
+   letter-spacing:5px;
+}
+
+.timeline{
+
+}
+
+.timeline img{
+  height: 130px;
+  transition:all cubic-bezier(.165,.84,.44,1) 1s;
+}
+.timeline span{
+
+  background-color:black;
+  height: 100px;
+  width:10px;
+
+}
+
+.empty_space{
+  height: 30%;
+}
